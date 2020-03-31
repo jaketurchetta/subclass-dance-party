@@ -1,6 +1,7 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+  this.class = 'blinkyDancer';
   makeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="blinkyDancer"></span>');
+  //this.$node = $('<span class="blinkyDancer"></span>');
   //console.log(this);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
@@ -18,4 +19,6 @@ makeBlinkyDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   this.$node.toggle();
+  //debugger;
 };
+

@@ -1,16 +1,23 @@
 .button{
   color: #0C0E0F;
-  background-color:#3F4349;
-  background-color:#25292D;
+  background-color: white;
   width: 75px;
   height: 30px;
   font-size: 15px;
   font-weight: bolder;
   border: none;
 }
+
+.button:hover {
+  background-color:gray;
+}
+
+.addDancerButton:hover{
+  background-color: white;
+}
 body, html{
   height:100%;
-  background-image: url('image.png');
+  background-image: url('curtain.jpg');
 }
 body{
   margin: 0px;
@@ -32,18 +39,40 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .blinkyDancer{
-  border:10px solid red;
-  border-radius:10px;
+  /* border:4px solid black; */
+  /* border-radius:40px; */
   position:absolute;
+  height: 60px;
+  width: 60px;
+  background-image: url('blinky.png');
 }
 .rockingDancer{
-  border:30px solid green;
-  border-radius:10px;
+  border:4px solid black;
+  height: 40px;
+  width: 40px;
+  background-color: green;
+  border-radius:0px;
   position:absolute;
 }
 
-.pulsatingDancer{
-  border:10px solid yellow;
+.pulsatingdancer{
+  border:4px solid black;
+  background-color: yellow;
   border-radius:10px;
+  height: 40px;
+  width: 40px;
   position:absolute;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.bouncingDancer{
+  /* border:4px solid black; */
+  /*background-color: orangered;*/
+  background-image: url('bouncy.gif');
+
+  height: 80px;
+  width: 72px;
+  position:absolute;
+  /*box-shadow: 50px 50px 0px black;*/
 }
