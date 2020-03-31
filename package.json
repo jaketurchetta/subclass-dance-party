@@ -1,0 +1,10 @@
+{
+  "name": "dance-party",
+  "version": "1.0.0",
+  "description": "dance-party",
+  "scripts": {
+    "start": "npx live-server"
+  },
+  "author": "Hack Reactor <curriculum.team@hackreactor.com>",
+  "license": "UNLICENSED"
+}

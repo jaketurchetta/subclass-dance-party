@@ -1,23 +1,18 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  makeDancer.call(this, top, left, timeBetweenSteps);
+var makeRockingDancer = function(top, left, timeBetweenSteps) {
+  makeDancer.call(this);
 
-  this.timeBetweenSteps = timeBetweenSteps;
-  this.top = top;
-  this.left = left;
-  //console.log(this);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-  this.oldStep = this.step;
+  var oldStep = this.step;
 
 };
 
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+makeRockingDancer.prototype = Object.create(makeDancer);
+makeRockingDancer.prototype.constructor = makeRockingDancer;
 
-makeBlinkyDancer.prototype.step = function() {
+makeRockingDancer.prototype.step = function() {
   // call the old version of step at the beginning of any call to this new version of step
-  console.log(this);
-  this.oldStep();
+  // oldStep();
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
