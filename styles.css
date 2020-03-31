@@ -1,5 +1,16 @@
+.button{
+  color: #0C0E0F;
+  background-color:#3F4349;
+  background-color:#25292D;
+  width: 75px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bolder;
+  border: none;
+}
 body, html{
   height:100%;
+  background-image: url('image.png');
 }
 body{
   margin: 0px;
@@ -20,8 +31,19 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+.blinkyDancer{
   border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+.rockingDancer{
+  border:30px solid green;
+  border-radius:10px;
+  position:absolute;
+}
+
+.pulsatingDancer{
+  border:10px solid yellow;
   border-radius:10px;
   position:absolute;
 }
